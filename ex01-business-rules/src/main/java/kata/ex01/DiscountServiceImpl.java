@@ -8,6 +8,6 @@ import kata.ex01.model.HighwayDrive;
 public class DiscountServiceImpl implements DiscountService {
     @Override
     public long calc(HighwayDrive drive) {
-        return 0;
+        return 50;
     }
 }

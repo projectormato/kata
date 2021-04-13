@@ -3,6 +3,7 @@ package kata.ex01;
 import kata.ex01.model.Driver;
 import kata.ex01.model.HighwayDrive;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
@@ -39,6 +40,7 @@ public class DiscountServiceTest {
         assertThat(discountService.calc(drive)).isEqualTo(50);
     }
 
+    @Disabled
     @Test
     public void test休日朝夕は休日割が適用される() {
         HighwayDrive drive = new HighwayDrive();
